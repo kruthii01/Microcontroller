@@ -1,6 +1,6 @@
 ;Write an ARM assembly program to demonstrate the usage of the MRS and  MSR instruction.
 
-  AREA Demo, CODE, READONLY  ; Define a code section named "Demo" as read-only  
+  AREA prg7, CODE, READONLY  ; 
 START
     LDR R0, =0x10          ; Load the immediate value 0x10 into register R0  
     MSR CPSR_c, R0         ; Move the value in R0 to the CPSR (changing processor mode)  
